@@ -1,0 +1,11 @@
+cmdchallenge/var.tar.gz
+cmdchallenge/img.tar
+cmdchallenge/var/challenges/*/README
+cmdchallenge/runcmd
+cmdchallenge/oops
+tags
+*.zip
+private/
+*.html-e
+db.sqlite3
+.envrc

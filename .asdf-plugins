@@ -1,0 +1,9 @@
+terraform
+shellcheck
+shfmt
+golang
+yq
+sqlite
+golangci-lint
+awscli
+nodejs
