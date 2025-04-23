@@ -468,17 +468,17 @@
         "disp_title": "hello world",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Tu primer desafío es imprimir \"hello world\" en la terminal con un solo comando.\n\nSugerencia: Hay muchas maneras de imprimir texto en la línea de comandos, una de ellas es con el comando 'echo'.\n¡Pruébalo a continuación y buena suerte!\n",
+        "description": "Tu primer desafío es imprimir \"hola mundo\" en la terminal con un solo comando.\n\nSugerencia: Hay muchas maneras de imprimir texto en la línea de comandos, una de ellas es con el comando 'echo'.\n¡Pruébalo a continuación y buena suerte!\n",
         "completions": [
             "place your advertisement here!"
         ],
-        "example": "echo 'hello world'",
+        "example": "echo 'hola mundo",
         "expected_failures": [
             "echo \"nope\""
         ],
         "expected_output": {
             "lines": [
-                "hello world"
+                "hola mundo"
             ]
         }
     },
@@ -488,7 +488,7 @@
         "disp_title": "cwd",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print the current working directory.\n",
+        "description": "Imprimir el directorio de trabajo actual.\n",
         "example": "pwd",
         "expected_failures": [
             "echo \"nope\""
@@ -505,7 +505,7 @@
         "disp_title": "list files",
         "version": 8,
         "author": "cmdchallenge",
-        "description": "List names of all the files in the current directory, one file per line.\n",
+        "description": "Lista los nombres de todos los archivos en el directorio actual, un archivo por línea.\n",
         "example": "ls",
         "expected_output": {
             "order": false,
@@ -526,7 +526,7 @@
         "disp_title": "file contents",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "There is a file named `access.log` in the current directory. Print the contents.\n",
+        "description": "Hay un archivo llamado `access.log` en el directorio actual. Imprima el contenido.\n",
         "completions": [
             "access.log"
         ],
@@ -552,7 +552,7 @@
         "version": 5,
         "author": "cmdchallenge",
         "disp_title": "last lines",
-        "description": "Print the last 5 lines of \"access.log\".\n",
+        "description": "Imprimir las últimas 5 líneas de \"access.log\".\n",
         "completions": [
             "access.log"
         ],
@@ -573,7 +573,7 @@
         "disp_title": "Create a file",
         "version": 2,
         "author": "cmdchallenge",
-        "description": "Create an empty file named `take-the-command-challenge` in the current working directory.\n",
+        "description": "Crea un archivo vacío llamado `take-the-command-challenge` en el directorio de trabajo actual.\n",
         "completions": [
             "take-the-command-challenge"
         ],
@@ -589,7 +589,7 @@
         "disp_title": "Create a directory",
         "version": 2,
         "author": "cmdchallenge",
-        "description": "Create a directory named `tmp/files` in the current working directory\n---\n_Hint: The directory \"`tmp/`\" doesn't exist, with one command you need to create both \"`tmp/`\" and \"`tmp/files`\"_\n",
+        "description": "Crea un directorio llamado `tmp/files` en el directorio de trabajo actual\n---\n_Sugerencia: El directorio \"`tmp/`\" no existe, con un comando necesitas crear tanto \"`tmp/`\" como \"`tmp/files`\"_\n",
         "completions": [
             "take-the-command-challenge",
             "tmp/files"
@@ -606,7 +606,7 @@
         "disp_title": "copy file",
         "version": 3,
         "author": "cmdchallenge",
-        "description": "Copy the file named `take-the-command-challenge` to the directory `tmp/files`\n",
+        "description": "Copiar el archivo llamado `take-the-command-challenge` al directorio `tmp/files`\n",
         "completions": [
             "take-the-command-challenge",
             "tmp/files"
@@ -623,7 +623,7 @@
         "disp_title": "move file",
         "version": 1,
         "author": "cmdchallenge",
-        "description": "Move the file named `take-the-command-challenge` to the directory `tmp/files`\n",
+        "description": "Mueva el archivo llamado `take-the-command-challenge` al directorio `tmp/files`\n",
         "completions": [
             "take-the-command-challenge",
             "tmp/files"
@@ -639,7 +639,7 @@
         "disp_title": "create symlink",
         "version": 1,
         "author": "cmdchallenge",
-        "description": "A symbolic link is a type of file that is a reference to another file.\n\nCreate a symbolic link named `take-the-command-challenge` that points to the\nfile `tmp/files/take-the-command-challenge`.\n",
+        "description": "Un enlace simbólico es un tipo de archivo que hace referencia a otro archivo.\n\nCrea un enlace simbólico llamado `take-the-command-challenge` que apunte al\narchivo `tmp/files/take-the-command-challenge`.\n",
         "completions": [
             "take-the-command-challenge",
             "tmp/files/take-the-command-challenge"
@@ -655,7 +655,7 @@
         "disp_title": "delete files",
         "version": 7,
         "author": "cmdchallenge",
-        "description": "Delete all of the files in this challenge directory including all subdirectories and their contents.\n---\n_Hint: There are files and directories that start with a dot \"`.`\", \"`rm -rf *`\" won't work here!_\n",
+        "description": "Elimine todos los archivos en este directorio del desafío, incluidos todos los subdirectorios y sus contenidos.\n---\n_Sugerencia: Hay archivos y directorios que comienzan con un punto \"`.`\", \"`rm -rf *`\" no funcionará aquí!_\n",
         "example": "find . -delete",
         "expected_failures": [
             "find . -exec rm {} \\;",
@@ -668,7 +668,7 @@
         "version": 6,
         "author": "cmdchallenge",
         "disp_title": "remove files with extension",
-        "description": "There are files in this challenge with different file extensions.\nRemove all files with the .doc extension recursively in the current working directory.\n",
+        "description": "Hay archivos en este desafío con diferentes extensiones.\nElimine todos los archivos con la extensión .doc de forma recursiva en el directorio de trabajo actual.\n",
         "example": "rm **/*.doc",
         "expected_failures": [
             "echo",
@@ -681,7 +681,7 @@
         "disp_title": "find string",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "There is a file named `access.log` in the current working directory. Print all lines in this file that contains the string \"GET\".\n",
+        "description": "Hay un archivo llamado `access.log` en el directorio de trabajo actual. Imprima todas las líneas de este archivo que contengan la cadena \"GET\".\n",
         "completions": [
             "access.log"
         ],
@@ -705,7 +705,7 @@
         "disp_title": "search for string",
         "version": 6,
         "author": "cmdchallenge",
-        "description": "Print all files in the current directory, one per line (not the path, just the filename) that contain the string \"500\".\n",
+        "description": "Imprimir todos los archivos en el directorio actual, uno por línea (no la ruta, solo el nombre del archivo) que contengan la cadena \"500\".\n",
         "completions": [
             "access.log"
         ],
@@ -727,7 +727,7 @@
         "disp_title": "search for extension",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print the relative file paths, one path per line for all filenames that start with \"access.log\" in the current directory.\n",
+        "description": "Imprimir las rutas de archivo relativas, una ruta por línea para todos los nombres de archivo que comiencen con \"access.log\" en el directorio actual.\n",
         "completions": [
             "access.log"
         ],
@@ -751,7 +751,7 @@
         "disp_title": "search recursive",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print all matching lines (without the filename or the file path) in all files under the current directory that start with \"access.log\" that contain the string \"500\".\n\nNote that there are no files named `access.log` in the current directory, you will need to search recursively.\n",
+        "description": "Imprime todas las líneas coincidentes (sin el nombre ni la ruta del archivo) en todos los archivos del directorio actual que comiencen con \"access.log\" y que contengan la cadena \"500\".\n\nTen en cuenta que no hay archivos llamados `access.log` en el directorio actual; deberás buscar de forma recursiva.\n",
         "completions": [
             "access.log"
         ],
@@ -771,7 +771,7 @@
         "disp_title": "find ip address",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Extract all IP addresses from files that start with \"access.log\" printing one IP address per line.\n",
+        "description": "Extrae todas las direcciones IP de los archivos que comienzan con \"access.log\" imprimiendo una dirección IP por línea.\n",
         "completions": [
             "access.log"
         ],
@@ -812,7 +812,7 @@
         "disp_title": "count files",
         "version": 8,
         "author": "cmdchallenge",
-        "description": "Count the number of files in the current working directory. Print the number of files as a single integer.\n",
+        "description": "Cuenta la cantidad de archivos en el directorio de trabajo actual. Imprime la cantidad de archivos como un solo entero.\n",
         "example": "find -L . -type f | wc -l",
         "expected_failures": [
             "echo 2"
@@ -833,7 +833,7 @@
         "disp_title": "simple sort",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print the contents of access.log sorted.\n",
+        "description": "Imprimir el contenido de access.log ordenado.\n",
         "completions": [
             "access.log"
         ],
@@ -859,7 +859,7 @@
         "disp_title": "count the strings",
         "version": 6,
         "author": "cmdchallenge",
-        "description": "Print the number of lines in access.log that contain the string \"GET\".\n",
+        "description": "Imprime el número de líneas en access.log que contienen la cadena \"GET\".\n",
         "completions": [
             "access.log"
         ],
@@ -883,7 +883,7 @@
         "disp_title": "split on a char",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "The file split-me.txt contains a list of numbers separated by a `;` character.\n\nSplit the numbers on the `;` character, one number per line.\n",
+        "description": "El archivo split-me.txt contiene una lista de números separados por un carácter `;`.\n\nSepara los números uno por línea.\n",
         "completions": [
             "split-me.txt"
         ],
@@ -909,7 +909,7 @@
         "disp_title": "generate a number sequence",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print the numbers 1 to 100 separated by spaces.\n",
+        "description": "Imprime los números del 1 al 100 separados por espacios.\n",
         "example": "echo $(seq 1 100)",
         "expected_output": {
             "lines": [
@@ -927,7 +927,7 @@
         "expected_failures": [
             "echo"
         ],
-        "description": "This challenge has text files (with a .txt extension) that contain the phrase \"challenges are difficult\".  Delete this phrase from all text files recursively.\n\nNote that some files are in subdirectories so you will need to search for them.\n"
+        "description": "Este desafío contiene archivos de texto (con extensión .txt) que contienen la frase \"challenges are difficult\". Elimine esta frase de todos los archivos de texto recursivamente.\n\nTenga en cuenta que algunos archivos están en subdirectorios, por lo que deberá buscarlos.\n"
     },
     {
         "slug": "sum_all_numbers",
@@ -939,7 +939,7 @@
         "expected_failures": [
             "echo 42"
         ],
-        "description": "The file sum-me.txt has a list of numbers, one per line. Print the sum of these numbers.\n",
+        "description": "El archivo sum-me.txt contiene una lista de números, uno por línea. Imprima la suma de estos números.\n",
         "expected_output": {
             "lines": [
                 "42"
@@ -952,7 +952,7 @@
         "disp_title": "only the filenames",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print all files in the current directory recursively without the leading directory path.\n",
+        "description": "Imprimir todos los archivos en el directorio actual recursivamente sin la ruta del directorio principal.\n",
         "example": "find -type f -printf '%f\\n'",
         "expected_output": {
             "order": false,
@@ -974,7 +974,7 @@
         "disp_title": "remove extensions",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Rename all files removing the extension from them in the current directory recursively.\n",
+        "description": "Renombrar todos los archivos eliminando la extensión de los mismos en el directorio actual de forma recursiva.\n",
         "example": "for f in $(find . -type f -name \"*.*\"); do mv \"$f\" \"${f%.*}\"; done",
         "expected_failures": [
             "echo"
@@ -986,7 +986,7 @@
         "disp_title": "replace spaces",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "The files in this challenge contain spaces.\nList all of the files (filenames only) in the current directory but replace all spaces with\na '.' character.\n",
+        "description": "Los archivos en este desafío contienen espacios.\nEnumera todos los archivos (solo nombres de archivo) en el directorio actual, pero reemplaza todos los espacios con el carácter '.'.\n",
         "example": "ls | tr ' ' '.'",
         "expected_output": {
             "order": false,
@@ -1050,7 +1050,7 @@
         "disp_title": "directories containing files",
         "version": 2,
         "author": "cmdchallenge",
-        "description": "In this challenge there are some directories containing files with different extensions.\nPrint all directories, one per line without duplicates that contain one or more files with a \".tf\" extension.\n",
+        "description": "En este desafío hay algunos directorios que contienen archivos con diferentes extensiones.\nImprime todos los directorios, uno por línea sin duplicados, que contengan uno o más archivos con la extensión \".tf\".\n",
         "completions": [
             "terraform",
             "main.tf",
@@ -1090,7 +1090,7 @@
         "disp_title": "files starting with a number",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "There are a mix of files in this directory that start with letters and numbers.\nPrint the filenames (just the filenames) of all files that start with a number recursively in the current directory.\n",
+        "description": "Hay una mezcla de archivos en este directorio que comienzan con letras y números.\nImprime los nombres de archivo (solo los nombres de archivo) de todos los archivos que comienzan con un número de forma recursiva en el directorio actual.\n",
         "completions": [
             "757Robert Marquez",
             "Mr. James Lopez",
@@ -1166,7 +1166,7 @@
         "disp_title": "nth line",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print the 25th line of the file faces.txt\n",
+        "description": "Imprimir la línea 25 del archivo faces.txt\n",
         "example": "sed -n '25p' faces.txt",
         "expected_output": {
             "lines": [
@@ -1180,7 +1180,7 @@
         "disp_title": "reverse",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print the lines of the file `reverse-me.txt` in this directory in reverse line order so that the last line is printed first and the first line is printed last.\n\n```\n~~~~~~~~~~~~~~~~~~~~~\nIn the future\nEnvironmental destruction will be the norm\nNo longer can it be said that\nMy peers and I care about this earth\nIt will be evident that\nMy generation is apathetic and lethargic\nIt is foolish to presume that\nThere is hope\n~~~~~~~~~~~~~~~~~~~~~\n-Jonathan Reed \"The Lost Generation\"\n```\n",
+        "description": "Imprime las líneas del archivo `reverse-me.txt` en este directorio en orden inverso, de modo que la última línea se imprima primero y la primera linea, al final.\n\n```\n~~~~~~~~~~~~~~~~~~~~~\nIn the future\nEnvironmental destruction will be the norm\nNo longer can it be said that\nMy peers and I care about this earth\nIt will be evident that\nMy generation is apathetic and lethargic\nIt is foolish to presume that\nThere is hope\n~~~~~~~~~~~~~~~~~~~~~\n-Jonathan Reed \"The Lost Generation\"\n```\n",
         "example": "tac reverse-me.txt",
         "expected_output": {
             "lines": [
@@ -1204,7 +1204,7 @@
         "disp_title": "remove duplicates",
         "version": 5,
         "author": "cmdchallenge",
-        "description": "Print the file faces.txt, but only print the first instance of each duplicate line, even if the duplicates don't appear next to each other.\n\nNote that order matters so don't sort the lines before removing duplicates.\n",
+        "description": "Imprime el archivo faces.txt, pero solo imprime la primera instancia de cada línea duplicada, incluso si los duplicados no aparecen uno al lado del otro.\n\nTen en cuenta que el orden importa, así que no ordenes las líneas antes de eliminar los duplicados.\n",
         "example": "awk '!x[$0]++' faces.txt",
         "expected_output": {
             "lines": [
@@ -1248,7 +1248,7 @@
         "completions": [
             "random-numbers.txt"
         ],
-        "description": "The file `random-numbers.txt` contains a list of 100 random integers.\nPrint the number of unique prime numbers contained in the file.\n",
+        "description": "El archivo `random-numbers.txt` contiene una lista de 100 números enteros aleatorios.\nImprime la cantidad de números primos únicos contenidos en el archivo.\n",
         "expected_output": {
             "lines": [
                 "12"
@@ -1266,7 +1266,7 @@
             "access.log.1",
             "access.log.2"
         ],
-        "description": "`access.log.1` and `access.log.2` are http server logs.\n\nPrint the IP addresses common to both files, one per line.\n",
+        "description": "`access.log.1` y `access.log.2` son registros del servidor http.\n\nImprime las direcciones IP comunes a ambos archivos, una por línea.\n",
         "expected_output": {
             "order": false,
             "lines": [
@@ -1284,7 +1284,7 @@
         "version": 5,
         "author": "mmr",
         "example": "awk '/404/{print a}{a=$0}' **/access.log*",
-        "description": "Print all matching lines (without the filename or the file path) in all files under the current directory that start with \"access.log\", where the next line contains the string \"404\".\n\nNote that you will need to search recursively.\n",
+        "description": "Imprime todas las líneas coincidentes (sin el nombre ni la ruta del archivo) en todos los archivos del directorio actual que comiencen con \"access.log\", donde la siguiente línea contenga la cadena \"404\".\n\nTen en cuenta que deberás buscar de forma recursiva.\n",
         "completions": [
             "access.log"
         ],
@@ -1305,7 +1305,7 @@
         "author": "anonymous",
         "disp_title": "files that are different",
         "example": "for i in $(ls *.bin); do if [[ `cmp base.bin $i` ]]; then echo $i; fi; done",
-        "description": "Print all files with a `.bin` extension in the current directory that are different than the file named base.bin.\n",
+        "description": "Imprimir todos los archivos con extensión `.bin` en el directorio actual que sean diferentes al archivo llamado base.bin.\n",
         "expected_output": {
             "order": false,
             "lines": [
@@ -1322,7 +1322,7 @@
         "disp_title": "tricky file",
         "version": 6,
         "author": "gitunique",
-        "description": "\nThere is a file: `./.../  /. .the flag.txt`\n\nShow its contents on the screen.\n",
+        "description": "\nHay un archivo: `./.../ /. .the flag.txt`\n\n Muestra su contenido en la pantalla.\n",
         "example": "cat ./.../\\ \\ /.\\ .the\\ flag.txt",
         "expected_failures": [
             "echo you got it!"
@@ -1339,7 +1339,7 @@
         "version": 6,
         "disp_title": "find tabs in file",
         "author": "anonymous",
-        "description": "How many lines contain tab characters in the file named `file-with-tabs.txt` in the current directory.\n",
+        "description": "¿Cuántas líneas contienen caracteres de tabulación en el archivo llamado `file-with-tabs.txt` en el directorio actual.\n",
         "example": "grep -P '\\t' file-with-tabs.txt | wc -l",
         "expected_failures": [
             "echo 3"
@@ -1356,7 +1356,7 @@
         "version": 5,
         "author": "bryfry",
         "disp_title": "Remove files without extension.",
-        "description": "There are files in this challenge with different file extensions.\n\nRemove all files without the .txt and .exe extensions recursively in the current working directory.\n",
+        "description": "Hay archivos en este desafío con diferentes extensiones.\n\nElimine todos los archivos sin las extensiones .txt y .exe de forma recursiva en el directorio de trabajo actual.\n",
         "example": "find . -type f -regextype posix-extended ! -regex \".*(\\.txt|\\.exe)$\" -exec rm {} +",
         "expected_failures": [
             "echo"
@@ -1368,7 +1368,7 @@
         "version": 5,
         "author": "anonymous",
         "disp_title": "Remove files that start with a dash",
-        "description": "There are some files in this directory that start with a dash in the filename.  Remove those files.\n",
+        "description": "Hay algunos archivos en este directorio que comienzan con un guion en el nombre del archivo. Elimine esos archivos.\n",
         "example": "rm ./-*",
         "expected_failures": [
             "echo"
@@ -1380,7 +1380,7 @@
         "version": 5,
         "author": "verovan",
         "disp_title": "Print the content sorted by PID",
-        "description": "There are two files in this directory, ps-ef1 and ps-ef2.  Print the contents of both files sorted by PID and delete repeated lines.\n",
+        "description": "Hay dos archivos en este directorio, ps-ef1 y ps-ef2. Imprima el contenido de ambos archivos ordenados por PID y elimine las líneas repetidas.\n",
         "example": "cat ps-ef1 > aux; sed '1 d' ps-ef2 >> aux; cat aux | sort -nk2,2 | uniq",
         "expected_output": {
             "lines": [
@@ -1413,7 +1413,7 @@
         "version": 5,
         "author": "TaTo69",
         "disp_title": "print the ports",
-        "description": "In the current directory there is a file called netstat.out.\n\nPrint all the IPv4 listening ports sorted from the higher to lower.\n",
+        "description": "En el directorio actual hay un archivo llamado netstat.out.\n\nImprime todos los puertos de escucha IPv4 ordenados de mayor a menor.\n",
         "example": "egrep  \"tcp\\ .*:**LISTEN\" netstat.out | awk '{print $4}' | sed -e 's/.*\\://g' | sort -nr",
         "expected_output": {
             "lines": [
