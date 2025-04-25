@@ -588,17 +588,17 @@
   version: 5
   author: cmdchallenge
   description: |
-    Your first challenge is to print "hello world" on the terminal in a single command.
+    Tu primer reto es escribir "hola mundo" en la terminal con un solo comando.
 
-    Hint: There are many ways to print text on the command line, one way is with the 'echo' command.
-    Try it below and good luck!
+    Sugerencia: Hay muchas maneras de escribir texto en la línea de comandos; una de ellas es con el comando "echo".
+    ¡Pruébalo a continuación y mucha suerte!
   completions: ["place your advertisement here!"]
-  example: echo 'hello world'
+  example: echo 'Hola Mundo'
   expected_failures:
-    - echo "nope"
+    - echo "No no no !!!!"
   expected_output:
     lines:
-      - 'hello world'
+      - 'hola mundo'
 - slug: current_working_directory
   emoji: emojis/1F98B
   disp_title: cwd
